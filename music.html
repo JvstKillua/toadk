@@ -1,0 +1,75 @@
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   .bg-blur {
+    background-image: url('https://placehold.co/1920x1080');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+   }
+   .range-opacity {
+    opacity: 0.6;
+   }
+  </style>
+ </head>
+ <body class="bg-gray-800 flex items-center justify-center h-screen relative">
+  <div class="bg-blur">
+  </div>
+  <div class="bg-gray-900 rounded-lg p-4 w-96 relative z-10">
+   <div class="flex items-center justify-between mb-4">
+    <div class="flex items-center">
+     <img alt="Telegram logo" class="w-6 h-6 rounded-full" height="24" src="https://storage.googleapis.com/a1aa/image/eVjNNZaSqxyIKahCFjefaGrE2ryibpo9GjDaqsllw4LRq3XnA.jpg" width="24"/>
+     <span class="text-white ml-2">
+      Telegram
+     </span>
+    </div>
+    <i class="fas fa-cog text-white">
+    </i>
+   </div>
+   <div class="text-white mb-2">
+    <div class="text-lg font-bold">
+     NDX AKA FAMILIA! Kau Tercipta Bukan Untuk
+    </div>
+    <div class="text-sm">
+     IBRAHIM HASAN
+    </div>
+   </div>
+   <div class="flex items-center mb-4">
+    <span class="text-gray-400 text-xs">
+     03:14
+    </span>
+    <input class="mx-2 flex-1 range-opacity" type="range" value="50"/>
+    <span class="text-gray-400 text-xs">
+     06:10
+    </span>
+   </div>
+   <div class="flex items-center justify-center mb-4">
+    <i class="fas fa-backward text-white mx-2">
+    </i>
+    <i class="fas fa-play text-white mx-2">
+    </i>
+    <i class="fas fa-forward text-white mx-2">
+    </i>
+   </div>
+   <div class="flex items-center">
+    <i class="fas fa-mobile-alt text-white">
+    </i>
+    <div class="flex-1 mx-2">
+     <div class="text-blue-500 text-sm">
+      This phone
+     </div>
+     <input class="w-full range-opacity" type="range" value="50"/>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
